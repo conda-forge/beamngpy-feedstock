@@ -1,5 +1,5 @@
 {% set name = "beamngpy" %}
-{% set version = "1.24" %}
+{% set version = "1.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
-  sha256: 5f5707fedcdae0c6f1cabdbfe839d6cb282272aca7935d61eea40c11caec12da
+  sha256: af1bf20d0c3683ec16cb4d5a219340e108bb39566f88e1cb18b3156fe80c1bec
 
 build:
   noarch: python
@@ -19,7 +19,6 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - click
     - jinja2
     - matplotlib-base
     - msgpack-python
