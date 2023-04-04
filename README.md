@@ -1,11 +1,11 @@
-About beamngpy
-==============
+About beamngpy-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/beamngpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/BeamNG/BeamNGpy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/beamngpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python API to interact with BeamNG.tech.
 
@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@aivora-beamng](https://github.com/aivora-beamng/)
+* [@dstark481](https://github.com/dstark481/)
 
