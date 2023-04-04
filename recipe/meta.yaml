@@ -1,5 +1,5 @@
 {% set name = "beamngpy" %}
-{% set version = "1.25.1" %}
+{% set version = "1.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
-  sha256: c59fb798a6eb00d53b9d883ae19755d8b3f21b5e019da17dc667a1c218fb87c2
+  sha256: 1ec9a0f3a401267bd94345fe28e2e332881c3d2cdce3976ae8ef528f501ec0dc
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - pyopengl
     - python >=3.6
     - scipy
+    - seaborn
 
 test:
   imports:
@@ -49,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - aivora-beamng
+    - dstark481
