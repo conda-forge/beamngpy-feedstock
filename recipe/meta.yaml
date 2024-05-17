@@ -24,6 +24,7 @@ requirements:
     - msgpack-python
     - numpy
     - pillow
+    - pyopengl
     - python >=3.6
     - scipy
     - seaborn
