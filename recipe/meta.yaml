@@ -6,26 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
   sha256: 33a4958bb4798b83061a1814da33886e146b1a9236a10f01501d1dd6c3bc3b57
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - setuptools
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - jinja2
     - matplotlib-base
     - msgpack-python
     - numpy
     - pillow
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
     - seaborn
 
@@ -35,6 +35,7 @@ test:
     - beamngpy.sensors
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
