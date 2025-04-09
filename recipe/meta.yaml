@@ -1,5 +1,5 @@
 {% set name = "beamngpy" %}
-{% set version = "1.31" %}
+{% set version = "1.32" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
-  sha256: 33a4958bb4798b83061a1814da33886e146b1a9236a10f01501d1dd6c3bc3b57
+  sha256: 035b95dbf1797e718adcca00b56f9c5c650331b86a0de6d57c76fd43580f8f4b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -45,7 +45,7 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: Python API to interact with BeamNG.tech.
-  doc_url: https://beamngpy.readthedocs.io
+  doc_url: https://documentation.beamng.com/api/beamngpy
   dev_url: https://github.com/BeamNG/BeamNGpy
 
 extra:
