@@ -11,7 +11,7 @@ Summary: Python API to interact with BeamNG.tech.
 
 Development: https://github.com/BeamNG/BeamNGpy
 
-Documentation: https://beamngpy.readthedocs.io
+Documentation: https://documentation.beamng.com/api/beamngpy
 
 Current build status
 ====================
