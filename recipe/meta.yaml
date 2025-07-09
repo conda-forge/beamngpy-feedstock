@@ -1,5 +1,5 @@
 {% set name = "beamngpy" %}
-{% set version = "1.33" %}
+{% set version = "1.33.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
-  sha256: f8fdf1f72064d010cccff0f32eee7604ed7e2b63044364972869b4ea423aa05e
+  sha256: 16dec10c7b3258a62d72075bf312df097d7468845b37916fccf84998c791c470
 
 build:
   noarch: python
