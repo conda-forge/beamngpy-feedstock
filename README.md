@@ -148,5 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@aivora-beamng](https://github.com/aivora-beamng/)
-* [@dstark481](https://github.com/dstark481/)
+* [@patrsc](https://github.com/patrsc/)
 
