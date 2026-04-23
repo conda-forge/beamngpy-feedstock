@@ -38,8 +38,8 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-  #commands:
-  #  - pip check
+  commands:
+    - pip check
 
 about:
   home: https://github.com/BeamNG/BeamNGpy
