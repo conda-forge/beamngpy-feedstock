@@ -1,13 +1,13 @@
 {% set name = "beamngpy" %}
-{% set version = "1.35.1" %}
+{% set version = "1.36" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/beamngpy-{{ version }}.tar.gz
-  sha256: efab6386ee171beb37e769e309c4ab67dc81362fbcef37e4b27e1c66a2dbed38
+  sha256: aa9f6007a1363c6081b924ee6fb6fedef37f11b7a2c469335e7aca8bc4ab0d9f
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - seaborn
     - fastapi
     - send2trash
+    - opencv
 
 test:
   imports:
@@ -38,8 +39,8 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-  #commands:
-  #  - pip check
+  commands:
+    - pip check
 
 about:
   home: https://github.com/BeamNG/BeamNGpy
